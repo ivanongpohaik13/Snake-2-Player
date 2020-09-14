@@ -8,13 +8,32 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <canvas id="map" width="400" height="400" 
-    style="border:10px solid gray;background-color: black"></canvas>
-    <br>
-    <button id="start" onclick=run()>Start</button>
-    <button id="stop-btn" onclick=stop()>Pause</button>
-    <script src="myScript.js"></script>
-    <script>
+    <div class="flex-container">
+      <div id="left-sidebar" class="sidebar">
+        <div>Score</div>
+        <div id="score">0</div>
+        <div><img src="arrow.png" alt="arrow"></div>
+      </div>
+      <div id="main">
+        <div><img id="logo-img" src="title2.png" alt="logo"></div>
+        <div id="frame">
+          <canvas id="map" width="300" height="300" 
+          style="border:10px solid gray;background-color: black"></canvas>
+        </div>
+        <div class="flex-container">
+          <div class="button" id="start" onclick=newGame()><button>New Game</button></div>
+          <div class="button" id="stop-btn" onclick=stop()><button id="pause">Pause</button></div>
+          <div class="button" id="reset-btn" onclick=reset()><button>Reset</button></div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="sidebar">
+        <div>Score</div>
+        <div id="score2">0</div>
+        <div><img src="wasd-key.png" alt="wasd"></div>
+      </div>
+    </div>
+   <script src="myScript.js"></script>
+   <script>
      
     </script>
   </body>

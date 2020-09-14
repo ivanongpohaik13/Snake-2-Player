@@ -1,8 +1,56 @@
-h1 {
-  color: navy;
-  margin-left: 20px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;;
+  background-color: yellow;
+}
+.sidebar{
   font-size: 50px;
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+}
+.sidebar div img {
+  width: 100%;
+  padding-top: 100px;
+}
+
+#left-sidebar{
+  width: 30%;
+  background-color: red;
+}
+#right-sidebar{
+  width: 30%;
+  background-color: blue;
+}
+#main{
+  width: 60%;
+}
+#logo-img{
+  width: 100%;
+}
+#frame{
+  background-color: yellow;
+  text-align: center;
+  /*padding: 20px;*/
+  /*margin: 200px;*/
+}
+.button{
+  width: 50%;
 }
 button {
   font-size: 25px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  /*border: 1px solid */
+  /*background-color: */
+}
+#stop-btn {
+  display: none;
 }
